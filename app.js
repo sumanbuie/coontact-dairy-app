@@ -10,6 +10,7 @@ app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/contacts", require("./routes/contacts"));
 
+//init Middleware
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to home page" });
 });
